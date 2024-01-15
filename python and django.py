@@ -42,14 +42,23 @@
 #     print(i)
 
 
-# Mapping Type  :	dict
-
-
-
-
-
+# # Mapping Type  :	dict
+# thisdict = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
+# print(thisdict)
 
 # Set Types     :	set, frozenset
-# Boolean Type  :	bool
-# Binary Types  :	bytes, bytearray, memoryview
-# None Type     :	NoneType
+
+# myset = set(["a", "b", "c"])
+# print(myset)
+
+# myset.add("d")
+# print(myset)
+
+# animals = frozenset(["cat", "dog", "lion"])
+# print("cat" in animals) 
+# print("elephant" in animals)
+
