@@ -156,6 +156,35 @@
 #   print(a)
 # Output = 243
 
+#########################################################################
+
+#Boolean
+
+# def is_odd(n):
+#     return(n % 2) == 1
+# print("is 2  odd ?",is_odd(2))
+
+# def is_even(n):
+#     return(n % 2) ==0
+# print ("is 2 is even", is_even(2))
+
+#####################################################
+
+#while loop
+
+# number = int(input("please share a number = "))
+# while number < 5: 
+#     print ("hello")
+#     number += 1
+
+
+number = 2
+while number <5:
+    print("hello world")
+    number = number +1
+    
+    
+
 
 
 
