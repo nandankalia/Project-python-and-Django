@@ -23,3 +23,35 @@ for instance in instances:
     print(f'Instance platform: {instance.platform}')
     print(f'Instance type: "{instance.instance_type}')
     print(f'Public IPv4 address: {instance.public_ip_address}')
+
+#Terminate instance
+
+import boto3
+
+def terminate_instance(instance_id):
+    ec2 = boto3.resource('ec2')
+
+    # Terminate the instance
+    instance = ec2.Instance(instance_id)
+    response = instance.terminate()
+
+    print(f"Termination response: {response}")
+
+def main():
+    # Take user input for the instance ID
+    instance_id = input("Enter the EC2 instance ID to terminate: ")
+
+    # Confirm the user's choice
+    confirm = input(f"Are you sure you want to terminate instance {instance_id}? (yes/no): ").lower()
+
+    if confirm == 'yes':
+        terminate_instance(instance_id)
+    else:
+        print("Termination aborted.")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
