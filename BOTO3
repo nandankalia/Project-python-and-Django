@@ -1,0 +1,11 @@
+To create a ec2 instance with BOTO3
+
+import boto3
+ec2 = boto3.resource("ec2")
+Instance = ec2.create_instances(
+ImageId = str(input("Enter your image-id: ")),
+InstanceType = str(input("Enter your instancetype: ")),
+MinCount = int(input("Enter the Mincount: ")),
+MaxCount = int(input("Enter the Maxcount: ")),
+KeyName = "Nandan" 
+)
